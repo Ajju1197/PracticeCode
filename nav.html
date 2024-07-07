@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fixed Nav with Tabs</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .fixed-nav {
+            background-color: #333;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            /* Adjust z-index to bring it to the front */
+        }
+
+        .fixed-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        .fixed-nav li {
+            margin: 0 20px;
+        }
+
+        .fixed-nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .tabs-nav {
+            background-color: #eee;
+            padding: 15px 0;
+            text-align: center;
+            position: relative;
+            /* Add position relative */
+            z-index: 1;
+            /* Adjust z-index to be behind the fixed nav */
+        }
+
+        .tabs-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .tabs-nav li {
+            margin: 0 15px;
+        }
+
+        .tabs-nav a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .tabs-nav a.active {
+            color: #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <div class="tabs-nav">
+        <ul>
+            <li><a href="#" class="active">Tab 1</a></li>
+            <li><a href="#">Tab 2</a></li>
+            <li><a href="#">Tab 3</a></li>
+            <li><a href="#">Tab 4</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Your page content goes here -->
+    </div>
+</body>
+
+</html>

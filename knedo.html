@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <link rel="stylesheet" href="styles/kendo.common.min.css" />
+  <link rel="stylesheet" href="styles/kendo.default.min.css" />
+  <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+  <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2022.2.621/styles/kendo.default-main.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: 5px;
+      padding: 5px;
+    }
+
+    li:hover {
+      background-color: #eee;
+    }
+
+    h3,
+    dl,
+    button {
+      font-size: 12px;
+    }
+
+    img {
+      max-height: 54px;
+      max-width: 72px;
+    }
+
+    dl::after {
+      clear: left;
+    }
+
+    dl dt {
+      float: left;
+    }
+
+    dl dd::before {
+      content: ': ';
+    }
+
+    button {
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+
+    button:target,
+    button:focus,
+    button:focus-within {
+      outline: 1px solid #06f;
+    }
+
+    main {
+      position: relative;
+      max-width: 25%;
+    }
+
+    #mini-cart {
+      position: fixed;
+      right: 60%;
+      top: 0;
+      min-width: 14%;
+      height: 100%;
+      overflow-y: scroll;
+      font-size: 12px;
+    }
+
+    #mini-cart button {
+      position: unset;
+    }
+
+    .as-console-wrapper {
+      min-height: 100% !important;
+      width: 60%;
+      top: 0;
+      left: auto !important;
+      right: 0;
+    }
+
+    .datePickerFloatingLabelClass {
+      position: relative;
+      margin-bottom: 20px;
+      margin-top: 40px;
+    }
+
+    .datePickerFloatingLabelClass label {
+      position: absolute;
+      top: 0;
+      left: 5px;
+      pointer-events: none;
+      transition: all 0.3s ease-out;
+      transform-origin: top left;
+      transform: translate(0, 0) scale(1);
+      font-size: 12px;
+      color: #999;
+    }
+
+    .datePickerFloatingLabelClass input:focus+label,
+    .datePickerFloatingLabelClass input:not(:placeholder-shown)+label {
+      transform: translate(5px, -20px) scale(0.8);
+      color: #333;
+    }
+  </style>
+
+</head>
+
+<body>
+  <main>
+    <ul data-product-overview>
+    </ul>
+  </main>
+
+  <section id="mini-cart" data-shopping-cart>
+    <div class="datePickerFloatingLabelClass">
+      <input kendo-date-picker tabindex="378602" placeholder="" emr-focus-class k-format="'MM/dd/yyyy'"
+        style="text-align: left;" onkeyup="validateDate(this, event)" onfocus="setFloatingLabelClassToDateField(this);"
+        ng-model="claimsMgntInvalidClaimsInfoModel.DateFrom"
+        onblur="validateDateOnLeave(this); removeFloatingLabelClassFromDateField(this);"
+        id="txtClaimsMgntInvalidClaimsInfoMainViewFromDate_{{claimsMgntInvalidClaimsInfoMainViewGUID}}"
+        name="txtClaimsMgntInvalidClaimsInfoMainViewFromDate" maxlength="10" type="text">
+      <label>Date From</label>
+    </div>
+
+    <a href="#mini-cart">
+      Mini Cart
+      <output data-cart-total></output>
+    </a>
+    <ul data-cart-overview>
+    </ul>
+  </section>
+  </div>
+
+
+</body>
+
+</html>

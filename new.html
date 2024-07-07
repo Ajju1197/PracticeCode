@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sidebar Toggle</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            display: flex;
+            height: 100vh;
+        }
+
+        .sidebar {
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            flex: 1;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+
+        .content {
+            flex: 5;
+            background-color: red;
+            padding: 20px;
+            transition: margin 0.3s ease, width 0.3s ease;
+            /* Added width transition */
+            width: calc(100% - 200px);
+            /* Default width */
+        }
+
+        .sidebar-hidden {
+            /* transform: translateX(-100%); */
+            flex: 0;
+        }
+
+        .content-expanded {
+            margin-left: 0;
+            width: 100%;
+            /* Width expands to 100% */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="toggleButton">Toggle Sidebar</button>
+    </div>
+    <div class="main">
+        <div class="sidebar" id="sidebar">
+            <!-- Sidebar content here -->
+        </div>
+        <div class="content" id="content">
+            <!-- Main content here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

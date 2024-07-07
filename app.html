@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Js</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./app.css">
+  <style>
+    html {
+      font-size: 10pt;
+    }
+
+    /* Style the dropdown button */
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style the dropdown content (hidden by default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    /* Style the links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    /* Style the dropdown button on hover */
+    .dropdown:hover .dropbtn {
+      background-color: #3e8e41;
+    }
+
+    .rem p,
+    .paraContent {
+      font-size: 1.5rem;
+    }
+
+    .heading {
+      font-size: 3rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <h3 class="heading">Syed Ajmathulla</h3>
+    <div class="dropdown">
+      <button class="dropbtn">Dropdown</button>
+      <div class="dropdown-content">
+        <a href="https://www.example.com/link1">Link 1</a>
+        <a href="https://www.example.com/link2">Link 2</a>
+        <a href="https://www.example.com/link3">Link 3</a>
+      </div>
+    </div>
+    <div class="rem">
+      <p>this about rem</p>
+    </div>
+    <!-- <div id="root" class="p-4 d-flex flex-column">
+      <div class="dataClass" id="dataId">
+        <label id="getBookName" class="text-white"></label><span class="text-white mx-3">:</span>
+        <label id="getPrice" class="text-success"></label>
+      </div>
+      <div>
+        <button class="btn btn-warning" onclick="getDetailsOfFiles(1)">JavaScript</button>
+        <button class="btn btn-danger" onclick="getDetailsOfFiles(2)">Html</button>
+        <button class="btn btn-info" onclick="getDetailsOfFiles(3)">Css</button>
+        <button class="btn btn-primary" onclick="getDetailsOfFiles(4)">.Net</button>
+      </div>
+      <button class="btn btn-success" id="goTop" onclick="getDetailsOfFiles(6)">Go Top</button>
+      <div class="">
+        <div class="col mt-4">
+          <div class="d-flex">
+            <input type="text" id="name">
+            <button class="btn btn-success ms-2" id="btn" onclick="getItem()">Add</button><br>
+            <small id="errorMessage"></small>
+          </div>
+          <div class="text mt-3"></div>
+          <a href="../../Angular Resume format3.html" class="btn btn-danger mt-3" download>Angular Resume</a>
+          <div id="cursor"></div>
+        </div>
+      </div>
+    </div> -->
+    <div>
+      <input type="text" id="input1" class="form-control">
+      <input type="text" id="input2" class="form-control">
+      <input type="text" id="result" class="form-control">
+      <button id="calcButton" onclick="performCalculation()">Calc</button>
+    </div>
+    <div class="maindiv ngclass" ng-class="djdjdj" style="height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 5px;
+    padding: 20px;">
+      <div style='border: 1px solid #ccc;padding:10px 20px;margin:10px 20px;display: flex;gap:10px'>
+        <div class="firstClass">firstClass</div>
+        <div class="SecondClass">SecondClass</div>
+        <div class="ThirdClass">ThirdClass</div>
+        <div class="FourthClass">FourthClass</div>
+      </div>
+      <div class="griblock" style="border: 1px solid #000;flex: 1 0 200px;overflow-y: auto;">
+        <div class="paraContent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus debitis odio quidem
+          possimus
+          eligendi eum consectetur ipsam veniam rerum! Eligendi reiciendis, consequuntur inventore soluta temporibus
+          rerum consectetur tempora voluptatem, itaque facilis fugiat nobis architecto asperiores sed quod quis optio
+          dolorem unde cum, placeat corrupti. Nam, nostrum. Modi consequuntur perferendis pariatur quidem beatae!
+          Impedit odio at, ullam sed doloribus tempore omnis neque perspiciatis. Consectetur voluptatibus aliquam quo
+          quia et. Fugiat laborum asperiores, laboriosam a, eligendi, eaque aperiam vitae ipsam quibusdam magni possimus
+          accusamus debitis maxime? Ad consequuntur numquam, nihil unde obcaecati veniam. Placeat laborum optio non.
+          Quae ducimus vero ab architecto nemo, minus, possimus optio quo exercitationem animi expedita! Quidem porro
+          optio, perferendis magnam nostrum explicabo. Officia vel nobis ipsa autem laudantium quo magni laborum ex sunt
+          voluptate aliquid, quas totam corporis consectetur deserunt placeat tenetur? Voluptates deleniti doloribus
+          recusandae laudantium excepturi sunt, voluptate totam incidunt molestiae, magnam consequuntur perspiciatis
+          repudiandae tempore maiores corrupti sed blanditiis illo hic. Esse ratione facere laudantium quisquam ducimus
+          atque mollitia dignissimos, quos ad repellendus dolorem maiores amet vero pariatur molestiae cum! Rerum
+          mollitia earum inventore voluptas ea exercitationem repellat, maxime illum corrupti nam nesciunt perspiciatis
+          pariatur! Animi, quod! Doloribus dignissimos nesciunt deserunt quo blanditiis voluptas?</div>
+        <div style="height: 20px;width: 20px;background-color: red;border-radius: 50%;"></div>
+        <div class="paraContent">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates culpa atque eius
+          velit tempora in ad
+          ratione iure unde, sint architecto dolore quisquam ipsa expedita tempore optio saepe fuga aut quae iusto
+          accusantium maxime excepturi quod corporis? Maiores maxime accusantium eligendi repudiandae nemo optio
+          corrupti facilis nesciunt doloremque amet non similique consequuntur eius cum quo, quisquam odit impedit dicta
+          est itaque perspiciatis voluptatibus? Earum minus cumque accusantium vitae asperiores reprehenderit cum quam
+          incidunt saepe, mollitia, necessitatibus, doloremque unde eos maiores aperiam quos sed ullam pariatur animi id
+          fuga commodi sapiente ducimus nemo. Placeat excepturi hic est eius vel maiores dignissimos ad adipisci,
+          officia ex ullam! Esse vero natus incidunt quae fuga consectetur, voluptas veniam? Voluptatum saepe optio ipsa
+          perferendis laudantium, numquam odit soluta? Eaque ut cum numquam pariatur error distinctio, ea, adipisci
+          velit, incidunt veniam aliquid a odit iste temporibus dolorum voluptatum non. Impedit eum blanditiis voluptate
+          exercitationem. Perspiciatis eaque ullam ducimus eos qui! Saepe illo ipsum ab sit illum facere, fuga sapiente
+          asperiores ad expedita cupiditate, ea nesciunt quo, dicta similique dolor velit praesentium minima dolore
+          earum! Harum praesentium ex culpa voluptatem mollitia architecto magnam sed laboriosam nam dolorem explicabo
+          illum dolores corrupti unde, hic libero accusantium. Eum omnis assumenda accusantium quibusdam atque! Quaerat,
+          dolorem suscipit iste dolores iusto laudantium ratione deserunt harum labore, minima porro nihil vitae, nisi
+          doloremque veniam? Nulla ullam eum pariatur ipsum, itaque impedit ipsa, debitis quae quia asperiores magnam
+          voluptas similique libero id, totam consectetur. Repudiandae magni culpa laborum ut corrupti perferendis esse
+          laboriosam delectus veritatis quibusdam libero dignissimos iusto, accusamus ipsa nobis commodi sequi! Sint et,
+          accusamus natus ullam possimus sequi exercitationem nobis cumque sunt veritatis. Culpa, perspiciatis omnis.
+          Minus porro, quidem delectus aperiam perspiciatis molestias velit odio optio temporibus reiciendis similique
+          quia placeat consectetur nisi officiis consequatur odit magnam, vero enim ducimus incidunt repellat earum
+          minima magni. Repudiandae recusandae quis quos, suscipit molestias possimus quo odit libero. Error nostrum
+          molestiae ea, consectetur nesciunt, nisi architecto et animi ipsa expedita veniam deserunt aut accusamus, non
+          eius velit minus dignissimos blanditiis laboriosam. Nulla mollitia asperiores error, natus, unde modi
+          necessitatibus aspernatur fugit, dolores voluptatibus culpa incidunt corrupti accusantium! Reprehenderit
+          facilis expedita impedit delectus minima ab iusto beatae libero quia ut velit, earum nam dolor, aliquam ullam
+          ipsum unde sapiente! Autem consequatur rem sit animi, sunt cum voluptatum expedita provident illum accusamus
+          odio nam hic totam ut laboriosam accusantium possimus ratione quibusdam nisi earum esse!
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos quasi optio asperiores deleniti, veritatis
+          praesentium fugit officia dolorem perferendis, sit veniam alias, nulla harum reiciendis. Voluptatibus nisi
+          nihil, odit tenetur dolor possimus saepe eveniet neque cumque quos animi repellat sapiente inventore, quo ut
+          quidem sequi modi id a voluptas voluptatem excepturi. Officia nulla, dignissimos fugit recusandae totam,
+          explicabo quod dolores repellat odit corporis minus fuga minima quaerat eum similique consequatur perspiciatis
+          excepturi quam voluptatibus doloribus! Voluptatem, sapiente! Consequatur aperiam et provident quidem, id
+          consectetur dolor magni laudantium debitis recusandae nulla voluptatibus, facilis eum expedita, laborum hic
+          harum voluptatum ut omnis iure. Sapiente sit aliquid magnam accusamus eius ad dolorem. Qui, quisquam.
+          Assumenda amet est doloremque vitae omnis itaque tempore sit laborum repudiandae consequatur, numquam,
+          voluptas eaque iusto quod in eveniet, fuga dolor provident animi incidunt porro unde optio! Quibusdam
+          laudantium quaerat adipisci nemo porro odit labore, quidem molestias eius voluptatibus vitae molestiae ex
+          nostrum pariatur corrupti. Fugit dolores temporibus quod deserunt! Blanditiis architecto magnam eligendi velit
+          laudantium impedit labore nulla, quasi nesciunt natus, reiciendis, aspernatur et amet! Eligendi modi iure
+          voluptas ex aspernatur, quod nisi omnis nemo error, beatae ea quae dicta tempore adipisci assumenda labore cum
+          nostrum atque dignissimos! Vero eveniet reiciendis dolorem beatae. Fuga corporis ex fugiat facilis, fugit
+          quidem. Eligendi, similique inventore placeat debitis unde odit fugit qui, fugiat repellat dicta voluptatibus
+          eveniet esse nobis expedita, assumenda est tenetur beatae veniam? Atque alias ipsa rem saepe. Soluta rerum
+          blanditiis minus odio repudiandae delectus officiis. Fuga soluta voluptas sit, voluptatum ab fugiat, quasi
+          odio laboriosam illo labore assumenda aperiam modi ea. Hic fugit inventore praesentium aut. Dolorum quis
+          placeat illum inventore magnam sequi asperiores hic similique excepturi optio error fuga, nesciunt quaerat
+          ducimus totam necessitatibus, magni ipsam numquam nam doloremque dolorem nostrum, distinctio accusantium
+          officiis! Amet ipsa nihil alias quibusdam impedit dolore fugit temporibus libero a aspernatur sunt quod velit
+          ratione ex, quas explicabo officiis incidunt optio accusamus nemo corrupti nisi commodi deserunt ducimus!
+          Aliquid perspiciatis suscipit minima odit earum provident reprehenderit quas? Quasi dolorum dolor perspiciatis
+          ipsa. Omnis similique nesciunt illum assumenda. Asperiores cum labore natus ipsam, tempora quod in ut
+          laboriosam. Quo placeat numquam cumque tempora vel magnam, sapiente commodi vero dolorum quod sequi harum modi
+          veniam voluptatem at explicabo. Nobis ipsum sint assumenda ab error nulla, expedita quo laboriosam minus
+          provident facilis eos accusantium eaque neque modi iusto explicabo deleniti numquam? Facilis nam asperiores
+          quidem esse magnam repellendus, ducimus beatae reiciendis ratione officia labore aliquid odio perspiciatis
+          optio dolorum eaque autem praesentium. Molestiae minima minus atque, enim facere blanditiis suscipit dicta
+          autem odio similique officiis quae quod soluta sequi nobis hic? Eum consectetur odit, eos voluptates
+          consequatur commodi voluptas provident obcaecati, nostrum quo excepturi at ex illum laborum quia! At
+          voluptates culpa esse expedita modi ipsam tenetur animi iste quibusdam, harum ad laboriosam non nostrum
+          commodi corrupti aperiam earum beatae est tempore illum veniam alias. Ea ducimus blanditiis doloremque
+          repudiandae praesentium? Odio earum itaque accusamus ipsa non, sapiente voluptatum quasi asperiores suscipit
+          cumque explicabo fugit.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit facere et distinctio fuga sapiente
+          ducimus esse alias dolorem consequuntur soluta saepe, laborum aliquid modi deleniti ipsa excepturi accusantium
+          minus voluptates odit officiis voluptatem inventore? Natus vero ut magni iste recusandae repudiandae cumque
+          cupiditate dicta sapiente alias illo aut earum, quaerat, cum vitae, aspernatur eaque voluptatum. Laboriosam
+          temporibus quaerat repudiandae animi, ipsa saepe explicabo maxime. Sequi itaque iure debitis asperiores
+          molestiae, et porro placeat, quidem quasi suscipit adipisci ipsum, expedita minima enim libero. Ipsam illo
+          aspernatur non repudiandae. Ad tempora velit, eaque nesciunt officiis adipisci aliquid, maxime quae eligendi
+          veritatis sequi!</div>
+      </div>
+      <div class="button" style="border: 1px solid #000;padding: 20px;"></div>
+    </div>
+    <div class></div>
+  </div>
+
+  <script src="./app.js"></script>
+  <script src="./switchCase.js"></script>
+</body>
+
+</html>
